@@ -65,7 +65,7 @@ app.get('/', (req, res) => {
 app.post('/upload', (req, res) => {
   upload(req, res, (err) => {
     if(err){
-      req.flash("error", err.message+'! Please Try Again.');
+      req.flash("error", err+'! Please Try Again.');
       res.redirect('/');
     } else {
       if(req.file == undefined){
