@@ -71,9 +71,9 @@ app.post('/upload', (req, res) => {
       if(req.file == undefined){
         req.flash("error", 'Sorry! No File Selected.');
         res.redirect('/');
+      }else{
+        res.render('index', {file: `/uploads/${req.file.filename}`, success: 'Great job! Image uploaded successfully.'});
       }
-      res.render('index', {file: `/uploads/${req.file.filename}`, success: 'Great job! Image uploaded successfully.'});
-
     }
   });
 });
