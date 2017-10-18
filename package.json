@@ -1,0 +1,31 @@
+{
+  "name": "file-upload-with-node-and-multer",
+  "version": "1.0.0",
+  "description": "file upload with node",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushil50889/File-Upload-With-Node-and-Multer.git"
+  },
+  "keywords": [
+    "file",
+    "upload"
+  ],
+  "author": "sushil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sushil50889/File-Upload-With-Node-and-Multer/issues"
+  },
+  "homepage": "https://github.com/sushil50889/File-Upload-With-Node-and-Multer#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "multer": "^1.3.0",
+    "path": "^0.12.7"
+  }
+}
